@@ -1,9 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: Karma, serif;
-  font-family: Oswald, sans-serif;
   line-height: 1.5;
-  font-weight: bold;
 }
 
 *,*::before, *::after {
@@ -17,61 +15,47 @@ body {
 h2 {
   font-family: "Oswald", sans-serif;
   color: #6f00e7;
-  text-align: center;
   font-size: 2rem;
+  margin: 0;
 }
 
 p {
-  font-family: "Karma", serif;
   text-align: center;
-  color: #000;
   font-size: 1.4rem;
+  margin: 0 0 1.5rem;
 }
 
 ol {
   display: grid;
   list-style: none;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
   margin: 0;
-  padding: .5em 1.5em .7em;
+  padding: 0;
+  gap: 1rem;
 }
 
-ol li {
+ol > li {
   display: flex;
   flex-direction: column;
   border: 3px solid #987ffa;
   border-radius: 6px;
-  padding: 1em;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-li {
+h2 + img {
+  order: -1;
+  max-width: 15em;
+  margin-bottom: 1.5rem;
+}
+
+ol ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  border: 3px solid #6f00e7;
-  border-radius: 6px;
-  padding: 1em;
-}
-
-/* Older Code*/
-
-a {
-  border-radius: 3rem;
-  background: #6f00e7;
-  color: #fff;
-  padding: .5em 1.5em .7em;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-ul {
-  grid-column: auto;
-}
-
-p {
-  padding-top: .4rem;
-  padding-bottom: .4rem;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
 }
